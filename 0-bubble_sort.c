@@ -2,12 +2,12 @@
 /**
  * bubble_sort - sort array elements from minimum to maximum value
  * @array: array
- * @size: size of the array
+ * @size: array size
  */
 void bubble_sort(int *array, size_t size)
 {
 
-	size_t i, index, temp = 0;
+	size_t i, index, tmp = 0;
 
 	if (size < 2)
 		return;
@@ -16,9 +16,9 @@ void bubble_sort(int *array, size_t size)
 		{
 			if (array[index] > array[index + 1] && array[index + 1])
 			{
-			temp = array[index];
+			tmp = array[index];
 			array[index] = array[index + 1];
-			array[index + 1] = temp;
+			array[index + 1] = tmp;
 			print_array(array, size);
 			}
 		}
